@@ -1,4 +1,5 @@
 from time import sleep
+from datetime import date
 from faker import Faker
 from functions.geradores import Geradores
 import pyautogui
@@ -35,6 +36,8 @@ class Metra:
         pyautogui.moveTo(310, 272)
         pyautogui.click(310, 272)
         pyautogui.typewrite(Geradores.gera_cpf())
+
+        pyautogui.moveTo(310, 272)
 
 
     def CadastraEmpresa():
